@@ -1,7 +1,9 @@
 ![th-sklearn-iris-demo-cover](https://media-blog.sashido.io/content/images/2021/08/th-sklearn-iris-demo-cover.jpeg)
 <h1>
   <p align="center">
-    <a href="https://th-iris-demo.herokuapp.com/" target="_blank">DEMO</a>
+    <a href="https://th-iris-demo.herokuapp.com/" target="_blank">Live DEMO</a>
+    <br/>
+    <a href="https://deepnote.com/project/TeachableHub-eXmrWiQKTm6fXJFLzxxCpA/%2F0_getting-started-sklearn.ipynb" target="_blank">Training Environment</a>
   </p>
 </h1>
 <br /><br />
