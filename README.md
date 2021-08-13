@@ -1,6 +1,41 @@
 ![th-sklearn-iris-demo-cover](https://media-blog.sashido.io/content/images/2021/08/th-sklearn-iris-demo-cover.jpeg)
+<h1>
+  <p align="center">
+    <a href="https://th-iris-demo.herokuapp.com/" target="_blank">DEMO</a>
+  </p>
+</h1>
+<br /><br />
 
 # Local Development
+
+#### 1. Clone this repo on your computer
+
+```
+git clone https://github.com/teachablehub/streamlit-sklearn-ui-demo-app.git
+cd streamlit-sklearn-ui-demo-app
+```
+
+#### 2. Setup python virtualenv (optional)
+
+- https://towardsdatascience.com/virtual-environments-for-absolute-beginners-what-is-it-and-how-to-create-one-examples-a48da8982d4b
+- https://docs.python-guide.org/dev/virtualenvs/
+
+```
+virtualenv -p python3.7 --no-site-packages venv
+source venv/bin/activate
+```
+
+#### 3. Install the dependencies
+
+```
+pip install -r requirements.txt
+```
+
+#### 4. Run the Streamlit app
+
+```
+streamlit run app.py
+```
 
 # Deploy on Heroku
 
@@ -25,22 +60,40 @@ heroku login
 
 ## Deploy
 
-1. ...
+#### 1. Clone this repo on your computer
 
+```
+git clone https://github.com/teachablehub/streamlit-sklearn-ui-demo-app.git
+cd streamlit-sklearn-ui-demo-app
+```
 
-2. Create a remote heroku project, kinda like creating a git repository on GitHub. This will create a project on Heroku with a random name. If you want to name your app you have to supply your own name like `heroku create project-name`. The command below will just create a random name:
+#### 2. Create a remote Heroku project
+Creating a Heroku project, kinda like creating a git repository on GitHub. This will create a project on Heroku with a random name. If you want to name your app you have to supply your own name like `heroku create project-name`. The command below will just create a random name:
 
 ```
 heroku create
 ```
 
-3. Push your app to **Heroku** like pushing to GitHub expect for `origin` you have `heroku` (you will see a wall of code).
+#### 3. Setup you TeachableHub credentials as Environment Variables.
+
+More information about the credentials you can find in your Teachable Docs at https://app.teachablehub.com/`user`/`teachable`/docs
+
+```
+heroku config:set \
+  TH_TEACHABLE=user/teachable \
+  TH_ENVIRONMENT=production \
+  TH_SERVING_KEY=your-serving-key-here
+```
+
+#### 4. Push your app to Heroku
+
+Pushing the app to **Heroku** like pushing to GitHub expect for `origin` you have `heroku` (you will see a wall of code).
 
 ```
 git push heroku master
 ```
 
-4. Visit your newly create app by opening it via heroku:
+#### 5. Visit your newly create app by opening it via heroku:
 
 ```
 heroku open
