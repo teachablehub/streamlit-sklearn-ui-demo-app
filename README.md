@@ -76,7 +76,7 @@ heroku create
 
 #### 3. Setup you TeachableHub credentials as Environment Variables.
 
-More information about the credentials you can find in your Teachable Docs at https://app.teachablehub.com/`user`/`teachable`/docs
+More information about the credentials you can find in your Teachable Docs at `https://app.teachablehub.com/<user>/<teachable>/docs`
 
 ```
 heroku config:set \
